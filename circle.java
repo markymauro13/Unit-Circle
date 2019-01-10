@@ -29,17 +29,33 @@ public class circle extends JFrame{
 		    
 		    
 		    g.setColor(Color.LIGHT_GRAY);
+		    
 		    g.fillArc(275, 175, 300, 300, 0, 360);
 		    
 		    Graphics2D g2 = (Graphics2D) g;
 		    g.setColor(Color.black);
 		    g2.setStroke(new BasicStroke(5));
-		    g.drawLine(430, 152 , 430, 498);
 		    
-		    Font font = new Font("Unispace", Font.BOLD, 25);
+		    // THIS IS THE X AND Y AXIS
+		    
+		    g.drawLine(430, 152 , 430, 498); 	// vertical line
+		    g.drawLine(253, 340, 597, 340);		// horizontal line
+		 
+		    Font font = new Font("Arial", Font.BOLD, 25);
 		    g.setFont(font);
 		    g.setColor(Color.black);
-		    g.drawString("0� ------ 0------#", 500, 350);
+		    
+		    g.drawString("0°, 0, (1,0)", 610, 350);	
+		    g.drawString("(-1,0) , \u03c0 , 180°", 55, 350);
+		    
+		    // THESE ARE THE 45 DEGREE ANGLES
+		    
+		    g2.setStroke(new BasicStroke(3)); 
+		    g.drawLine(320, 465, 550, 205);		// 45 and 225 degrees	// these numbers are similar but not the same for some reason
+		    g.drawLine(290, 215, 550, 447);		// 135 and 315 degrees
+		    
+		    
+		  
 	}
 	
 }
