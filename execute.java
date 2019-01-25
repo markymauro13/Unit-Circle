@@ -14,7 +14,7 @@ public class execute {
 		circle s = new circle();
 		
 		s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		s.setSize(800, 600);
+		s.setSize(830, 650);
 		s.setVisible(true); 
 		
 		
